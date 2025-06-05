@@ -1,0 +1,30 @@
+name: Add JAR to GitHub Release
+on:
+  release:
+    types: [created]
+jobs:
+  upload-jar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '22'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build with Maven
+        run: mvn clean package
+      - name: Deploy
+        run: mkdir staging && cp target/*.jar staging
+      - name: Set Perms
+        run: chmod +x target/BraceletDesigner-1.0-SNAPSHOT.jar
+      - name: Upload JAR to GitHub Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: target/BraceletDesigner-1.0-SNAPSHOT.jar
+          asset_name: BraceletDesigner-1.0-SNAPSHOT.jar
+          asset_content_type: "application/java-archive"
