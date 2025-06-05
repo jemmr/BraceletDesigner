@@ -46,7 +46,7 @@ public class Bracelet {
         if ( Objects.isNull( colorSet ) || Objects.isNull( colorOrder ) ) throw new IllegalComponentStateException();
         length = knots.length/2*2;
         knotsWide = colorOrder.length/2 + 1;
-        System.out.println( STR."width: \{width}; length: \{length}; knotsWide: \{knotsWide}\n");
+//        System.out.println( STR."width: \{width}; length: \{length}; knotsWide: \{knotsWide}\n");
         if ( knots[0].length + 1 < knotsWide ) throw new IllegalArgumentException();
         boolean oddWidth = width%2 == 1;
 
@@ -59,7 +59,7 @@ public class Bracelet {
 
         System.out.print( "0: " );
         for ( j = 0; j < knotsWide - 1; j++ ) {
-            System.out.print( STR." \{j}" );
+//            System.out.print( STR." \{j}" );
             bracelet[0][j] = new StringKnot(
                     colorOrder[2*j],
                     colorOrder[2*j + 1],
@@ -69,18 +69,18 @@ public class Bracelet {
         }
         if ( oddWidth ) {
             bracelet[0][j] = new StringStraight(colorOrder[2 * j], true);
-            System.out.print( STR." \{j}!" );
+//            System.out.print( STR." \{j}!" );
         }
         else bracelet[0][j] = null;
-        System.out.println();
+//        System.out.println();
 
         for ( i = 1; i < length; i++ ) {
-            System.out.print( STR."\{i}:" );
+//            System.out.print( STR."\{i}:" );
             int rowParity = i%2;
             if ( rowParity == 0 ) {
-                System.out.print( " " );
+//                System.out.print( " " );
                 for ( j = 0; j < knotsWide - 1; j++ ) {
-                    System.out.print( STR." \{j}" );
+//                    System.out.print( STR." \{j}" );
                     newNode = new StringKnot(
                             bracelet[i - 1][j].getStringOut(true),
                             bracelet[i - 1][j + 1].getStringOut(false),
@@ -92,7 +92,7 @@ public class Bracelet {
                     knotMatrix[i][j] = knots[i][j];
                 }
                 if ( oddWidth ) {
-                    System.out.print( STR." \{j}!" );
+//                    System.out.print( STR." \{j}!" );
                     newNode = new StringStraight(
                             bracelet[i - 1][j].getStringOut(true),
                             true
@@ -101,7 +101,7 @@ public class Bracelet {
                     bracelet[i][j] = newNode;
                 }
             } else {
-                System.out.print( " 0" );
+//                System.out.print( " 0" );
                 newNode = new StringStraight(
                         bracelet[i - 1][0].getStringOut(false),
                         false
@@ -109,7 +109,7 @@ public class Bracelet {
                 bracelet[i - 1][0].setChild(newNode, false);
                 bracelet[i][0] = newNode;
                 for ( j = 1; j < (width + 1)/2; j++ ) {
-                    System.out.print(STR." \{j}");
+//                    System.out.print(STR." \{j}");
                     newNode = new StringKnot(
                             bracelet[i - 1][j - 1].getStringOut(true),
                             bracelet[i - 1][j].getStringOut(false),
@@ -120,7 +120,7 @@ public class Bracelet {
                     bracelet[i][j] = newNode;
                 }
                 if ( !oddWidth ) {
-                    System.out.print( STR." \{j}!");
+//                    System.out.print( STR." \{j}!");
                     newNode = new StringStraight(
                             bracelet[i - 1][j - 1].getStringOut(true),
                             true
@@ -129,7 +129,7 @@ public class Bracelet {
                     bracelet[i][j] = newNode;
                 }
             }
-            System.out.println();
+//            System.out.println();
         }
     }
 
@@ -171,11 +171,11 @@ public class Bracelet {
 
     public int getColorInd( int i, int j ) {
         if ( i >= bracelet.length ) {
-            System.out.println( STR."Error. Invalid i given: \{i}, \{j}" );
+//            System.out.println( STR."Error. Invalid i given: \{i}, \{j}" );
             throw new IllegalArgumentException();
         }
         if ( j >= (colorOrder.length + j%2)/2 ) {
-            System.out.println( STR."Error. Invalid x given: \{i}, \{j}" );
+//            System.out.println( STR."Error. Invalid x given: \{i}, \{j}" );
             throw new IllegalArgumentException();
         }
         return bracelet[i][j].getColor();
@@ -183,11 +183,11 @@ public class Bracelet {
 
     public Color getColor( int i, int j ) {
         if ( i >= bracelet.length ) {
-            System.out.println( STR."Error. Invalid i given: \{i}, \{j}" );
+//            System.out.println( STR."Error. Invalid i given: \{i}, \{j}" );
             throw new IllegalArgumentException();
         }
         if ( j >= (colorOrder.length + j%2)/2 ) {
-            System.out.println( STR."Error. Invalid x given: \{i}, \{j}" );
+//            System.out.println( STR."Error. Invalid x given: \{i}, \{j}" );
             throw new IllegalArgumentException();
         }
         return colorSet[bracelet[i][j].getColor()];
@@ -227,11 +227,10 @@ public class Bracelet {
                     Color c = getColor( i, j );
                     System.out.printf( " #%02x%02x%02x", c.getRed(), c.getGreen(), c.getBlue() );
                 }
-//                System.out.println( bracelet[i][j] );
+                System.out.println( bracelet[i][j] );
             }
             System.out.println();
         }
     }
 
-    // firePropertyChange()
 }

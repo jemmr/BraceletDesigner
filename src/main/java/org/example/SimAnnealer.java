@@ -128,8 +128,8 @@ public class SimAnnealer {
             }
             curTemp *= decTemp; // Decreases T, cooling phase
         }
-        bracelet.printBracelet();
-        System.out.println( STR."solution created, score = \{minScore}" );
+//        bracelet.printBracelet();
+        System.out.printf( "solution created, score = %f\n", minScore );
     }
 
     public void makeBracelet() {

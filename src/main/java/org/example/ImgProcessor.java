@@ -29,7 +29,7 @@ public class ImgProcessor {
 
     public BufferedImage scale(BufferedImage image, int width, int height ) {
         int w = height*image.getWidth()/image.getHeight(), x = 0;
-        System.out.println( STR."    \{w} -> \{width}, \{height}" );
+//        System.out.println( STR."    \{w} -> \{width}, \{height}" );
         Image scaled = image.getScaledInstance( w, height, Image.SCALE_FAST );
         BufferedImage newImage = new BufferedImage( width, height, BufferedImage.TYPE_INT_ARGB );
         Graphics2D g = newImage.createGraphics();
@@ -141,7 +141,7 @@ public class ImgProcessor {
         r = r / colorList.size();
         g = g / colorList.size();
         b = b / colorList.size();
-        System.out.println( STR."  \{r},\{g},\{b}");
+//        System.out.println( STR."  \{r},\{g},\{b}");
         return new Color( r, g, b );
     }
 }

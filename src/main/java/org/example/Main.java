@@ -49,7 +49,7 @@ public class Main {
         Bracelet b = new Bracelet();
         b.setColors( testColors, new int[]{0,1,2,3,4,5} );
         b.buildBracelet( testKnots );
-        b.printBracelet();
+//        b.printBracelet();
         return b;
     }
 }

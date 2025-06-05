@@ -75,7 +75,7 @@ public class BraceletPanel extends JPanel implements MouseListener, PropertyChan
         showEditor = true;
         int i = (x - 4)/20;
         int j = bracelet.getKnotsWide() - (y/16 + 4 - (bracelet.getWidth()+i)%2)/2;
-        System.out.println(STR."Click! (\{x},\{y}) -> (\{i}, \{j})");
+//        System.out.println(STR."Click! (\{x},\{y}) -> (\{i}, \{j})");
         bracelet.incrementKnot( i, j );
         repaint();
         revalidate();

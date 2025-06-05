@@ -3,38 +3,25 @@
     "@id" : "http://krcadinac.com/synesketch/",
     "@type" : "prov:Agent"
   }, {
-    "@id" : "http://krcadinac.com/synesketch/Analysis/1471208954516463",
+    "@id" : "http://krcadinac.com/synesketch/Analysis/1749120627326658",
     "@type" : "onyx:EmotionAnalysis",
     "dc:language" : "en",
     "onyx:algorithm" : "Synesketch",
     "usesEmotionModel" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#big6",
-    "generated" : "http://krcadinac.com/synesketch/EmotionSet/1471208954516463",
+    "generated" : "http://krcadinac.com/synesketch/EmotionSet/1749120627326658",
     "wasAssociatedWith" : "http://krcadinac.com/synesketch/"
   }, {
-    "@id" : "http://krcadinac.com/synesketch/EmotionSet/1471208954516463",
-    "@type" : "onyx:EmotionSet",
-    "onyx:extractedFrom" : " wow",
-    "hasEmotion" : [ "http://krcadinac.com/synesketch/Surprise/1471208954516463", "http://krcadinac.com/synesketch/Happiness/1471208954516463" ]
-  }, {
-    "@id" : "http://krcadinac.com/synesketch/Happiness/1471208954516463",
+    "@id" : "http://krcadinac.com/synesketch/Disgust/1749120627326658",
     "@type" : "onyx:Emotion",
-    "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#happiness",
-    "hasEmotion:Intensity" : 0.5
-  }, {
-    "@id" : "http://krcadinac.com/synesketch/Surprise/1471208954516463",
-    "@type" : "onyx:Emotion",
-    "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#surprise",
+    "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#disgust",
     "hasEmotion:Intensity" : 1.0
+  }, {
+    "@id" : "http://krcadinac.com/synesketch/EmotionSet/1749120627326658",
+    "@type" : "onyx:EmotionSet",
+    "onyx:extractedFrom" : "Gross! It's so slimy!",
+    "hasEmotion" : "http://krcadinac.com/synesketch/Disgust/1749120627326658"
   } ],
   "@context" : {
-    "hasEmotionIntensity" : {
-      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotionIntensity",
-      "@type" : "http://www.w3.org/2001/XMLSchema#double"
-    },
-    "hasEmotionCategory" : {
-      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotionCategory",
-      "@type" : "@id"
-    },
     "hasEmotion" : {
       "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotion",
       "@type" : "@id"
@@ -42,6 +29,14 @@
     "extractedFrom" : {
       "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#extractedFrom",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEmotionIntensity" : {
+      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotionIntensity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasEmotionCategory" : {
+      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotionCategory",
+      "@type" : "@id"
     },
     "generated" : {
       "@id" : "http://www.w3.org/ns/prov#generated",

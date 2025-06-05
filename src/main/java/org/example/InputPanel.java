@@ -23,8 +23,8 @@ public class InputPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                System.out.print( "input: " );
-                System.out.println( textField.getText() );
+//                System.out.print( "input: " );
+//                System.out.println( textField.getText() );
                 type = InputType.processing;
                 inputPanel.firePropertyChange( "text", null, textField.getText() );
             }
@@ -38,8 +38,8 @@ public class InputPanel extends JPanel {
                 File f = chooser.getSelectedFile();
                 if ( f != null ) {
                     String filename = f.getAbsolutePath();
-                    System.out.print( "image chosen in input: ");
-                    System.out.println( filename );
+//                    System.out.print( "image chosen in input: ");
+//                    System.out.println( filename );
                     try {
                         BufferedImage img = ImageIO.read(new File( filename ));//get the image from file chooser and scale it to match JLabel size
                         type = InputType.upload;
@@ -54,8 +54,11 @@ public class InputPanel extends JPanel {
         {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if ( type == InputType.none ) System.out.println( "- no image chosen" );
-                else inputPanel.firePropertyChange("start", null, type);
+                if ( type != InputType.none ) {
+                    inputPanel.firePropertyChange("start", null, type);
+                    if ( type == InputType.processing ) type = InputType.upload;
+                }
+//                else System.out.println( "- no image chosen" );
             }
         };
 //        textField.setPreferredSize( new Dimension( 450, 30 ) );
