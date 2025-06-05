@@ -104,13 +104,13 @@ public class SimAnnealer {
 
     private void anneal() {  // code largely based on https://www.geeksforgeeks.org/simulated-annealing/
         double curTemp = 1, finTemp = 0.001, decTemp = 0.9;
-        int iter = 100, l = bracelet.getLength(), kw = bracelet.getKnotsWide(), w = bracelet.getWidth();
+        int iter = 1000, l = bracelet.getLength(), kw = bracelet.getKnotsWide(), w = bracelet.getWidth();
         double minScore = score(), curScore = minScore;
         while ( curTemp > finTemp ) {
             for ( int i = 0; i < iter; i++ ){
                 if ( curScore < minScore ) minScore = curScore;
 
-                int x = 0, y = 0, old = 0;
+                int x, y, old = 0;
                 x = (int) (Math.random()*(l+1)) - 1;
                 if ( x == -1 ) {
                     y = (int) (Math.random()*w);
@@ -124,7 +124,7 @@ public class SimAnnealer {
                 if (ap <= Math.random()) {
                     if ( x == -1 ) bracelet.colorOrderValue( y, old );
                     else bracelet.decrementKnot( x, y );
-                }
+                } else curScore = newScore;
             }
             curTemp *= decTemp; // Decreases T, cooling phase
         }
