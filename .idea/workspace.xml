@@ -4,37 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3b2d04c-24ae-480f-b17d-617ac5553b9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText0.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText1.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText122.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText2.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText3.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText4.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText5.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/txt/annotatedText6.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/viz/settings/visualizationSettingsAnnotation.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ann/viz/visuals/synemaniaAnger0.jsonld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bracelet-Repr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ArtPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Bracelet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BraceletPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ImgProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InputPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InputType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/KnotType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SimAnnealer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StringKnot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StringNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StringStraight.java" afterDir="false" />
+    <list default="true" id="c3b2d04c-24ae-480f-b17d-617ac5553b9c" name="Changes" comment="braceletdesigner">
+      <change afterPath="$PROJECT_DIR$/CITATION.cff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ann/txt/annotatedText0.jsonld" beforeDir="false" afterPath="$PROJECT_DIR$/ann/txt/annotatedText0.jsonld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SimAnnealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SimAnnealer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +54,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -133,12 +109,39 @@
       <workItem from="1740363839213" duration="14167000" />
       <workItem from="1740519329224" duration="9023000" />
       <workItem from="1741713253597" duration="1508000" />
-      <workItem from="1742443024864" duration="10115000" />
+      <workItem from="1742443024864" duration="15186000" />
+      <workItem from="1742792250373" duration="17770000" />
+      <workItem from="1748383770445" duration="8248000" />
+      <workItem from="1749101710449" duration="161000" />
     </task>
+    <task id="LOCAL-00001" summary="braceletdesigner">
+      <option name="closed" value="true" />
+      <created>1742698820807</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742698820807</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="braceletdesigner" />
+    <option name="LAST_COMMIT_MESSAGE" value="braceletdesigner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

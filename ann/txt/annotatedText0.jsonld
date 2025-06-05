@@ -3,30 +3,38 @@
     "@id" : "http://krcadinac.com/synesketch/",
     "@type" : "prov:Agent"
   }, {
-    "@id" : "http://krcadinac.com/synesketch/Analysis/17417135517566",
+    "@id" : "http://krcadinac.com/synesketch/Analysis/1748751592456330",
     "@type" : "onyx:EmotionAnalysis",
     "dc:language" : "en",
     "onyx:algorithm" : "Synesketch",
     "usesEmotionModel" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#big6",
-    "generated" : "http://krcadinac.com/synesketch/EmotionSet/17417135517566",
+    "generated" : "http://krcadinac.com/synesketch/EmotionSet/1748751592456330",
     "wasAssociatedWith" : "http://krcadinac.com/synesketch/"
   }, {
-    "@id" : "http://krcadinac.com/synesketch/Anger/17417135517566",
+    "@id" : "http://krcadinac.com/synesketch/Anger/1748751592456330",
     "@type" : "onyx:Emotion",
     "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#anger",
-    "hasEmotion:Intensity" : 1.0
+    "hasEmotion:Intensity" : 0.058823529411764705
   }, {
-    "@id" : "http://krcadinac.com/synesketch/Disgust/17417135517566",
-    "@type" : "onyx:Emotion",
-    "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#disgust",
-    "hasEmotion:Intensity" : 0.26666666666666666
-  }, {
-    "@id" : "http://krcadinac.com/synesketch/EmotionSet/17417135517566",
+    "@id" : "http://krcadinac.com/synesketch/EmotionSet/1748751592456330",
     "@type" : "onyx:EmotionSet",
-    "onyx:extractedFrom" : "angry",
-    "hasEmotion" : [ "http://krcadinac.com/synesketch/Disgust/17417135517566", "http://krcadinac.com/synesketch/Anger/17417135517566" ]
+    "onyx:extractedFrom" : "What a shock— I'm speechless.",
+    "hasEmotion" : [ "http://krcadinac.com/synesketch/Surprise/1748751592456330", "http://krcadinac.com/synesketch/Anger/1748751592456330" ]
+  }, {
+    "@id" : "http://krcadinac.com/synesketch/Surprise/1748751592456330",
+    "@type" : "onyx:Emotion",
+    "hasEmotionCategory" : "http://www.gsi.dit.upm.es/ontologies/onyx/vocabularies/emotionml/ns#surprise",
+    "hasEmotion:Intensity" : 1.0
   } ],
   "@context" : {
+    "hasEmotion" : {
+      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotion",
+      "@type" : "@id"
+    },
+    "extractedFrom" : {
+      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#extractedFrom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "hasEmotionIntensity" : {
       "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotionIntensity",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
@@ -53,14 +61,6 @@
     },
     "algorithm" : {
       "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#algorithm",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "hasEmotion" : {
-      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#hasEmotion",
-      "@type" : "@id"
-    },
-    "extractedFrom" : {
-      "@id" : "http://www.gsi.dit.upm.es/ontologies/onyx/ns#extractedFrom",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "irsrdf" : "http://www.w3.org/2005/11/its/rdf#",
