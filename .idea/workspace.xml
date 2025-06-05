@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3b2d04c-24ae-480f-b17d-617ac5553b9c" name="Changes" comment="braceletdesigner">
-      <change afterPath="$PROJECT_DIR$/CITATION.cff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ann/txt/annotatedText0.jsonld" beforeDir="false" afterPath="$PROJECT_DIR$/ann/txt/annotatedText0.jsonld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SimAnnealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SimAnnealer.java" afterDir="false" />
-    </list>
+    <list default="true" id="c3b2d04c-24ae-480f-b17d-617ac5553b9c" name="Changes" comment="braceletdesigner" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,7 +109,7 @@
       <workItem from="1742443024864" duration="15186000" />
       <workItem from="1742792250373" duration="17770000" />
       <workItem from="1748383770445" duration="8248000" />
-      <workItem from="1749101710449" duration="161000" />
+      <workItem from="1749101710449" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="braceletdesigner">
       <option name="closed" value="true" />
@@ -122,7 +119,31 @@
       <option name="project" value="LOCAL" />
       <updated>1742698820807</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="braceletdesigner">
+      <option name="closed" value="true" />
+      <created>1749101943626</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749101943626</updated>
+    </task>
+    <task id="LOCAL-00003" summary="braceletdesigner">
+      <option name="closed" value="true" />
+      <created>1749102120265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749102120265</updated>
+    </task>
+    <task id="LOCAL-00004" summary="braceletdesigner">
+      <option name="closed" value="true" />
+      <created>1749102152715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749102152715</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
